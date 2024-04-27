@@ -10,6 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/99bddb14ab.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'gradiant-end': '#F00',
+                'gradiant-start': '#FF8938',
+              }
+            }
+          }
+        }
+      </script>
     <style>
         .font-Manrope{
             font-family: "Manrope", sans-serif;
@@ -29,7 +41,7 @@
                         tea time at The <br>
                          Tea House!</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn bg-gradient-to-r from-gradiant-start to-gradiant-end text-white">Get Started</button>
                   </div>
                   <div>
                     <img src="images/banner.png" class="max-w-sm " />
@@ -106,7 +118,7 @@
             </div>
 
         </section>
-        <section class="my-24 flex flex-row lg:flex-row gap-12  rounded-xl bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-16 py-24">
+        <section class="my-24 flex flex-row lg:flex-row gap-12  rounded-xl bg-gradient-to-r from-gradiant-start to-gradiant-end px-16 py-24">
             <div class=" flex pr-32 items-center">
                 <div class="space-y-5 ">
                     <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br>
@@ -184,9 +196,54 @@
         </section>
 
     </main>
-    <footer>
-
-    </footer>
+    <footer class=" px-48 py-10 bg-base-200 text-base-content" >
+        <div class="flex justify-between my-24 ">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get strated?</span>
+                <button class="btn bg-gradient-to-r from-gradiant-start to-gradiant-end">Get Started</button>
+            </p>
+        </div>
+        <div class="footer">
+        <nav>
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Legal</h6> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav> 
+        <form>
+          <h6 class="footer-title">Newsletter</h6> 
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label> 
+            <div class="relative">
+              <input type="text" placeholder="username@site.com" class="py-4 bg-transparent border-b-2 border-black outline-none" /> 
+              <button class="btn bg-gradient-to-r from-gradiant-start to-gradiant-end absolute top-0 right-0 rounded-full"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </fieldset>
+        </form>
+    </div>
+        <div>
+            <aside class="mt-10 text-center">
+                <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+              </aside>
+        </div>
+      </footer>
     
 </body>
 </html>
